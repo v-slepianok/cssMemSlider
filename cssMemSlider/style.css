@@ -39,7 +39,7 @@
 .slider__item{
   width: 600px;
   height: 400px;
-  transition: 0.5s all;
+  opacity: 0;
 
 }
 
@@ -93,17 +93,22 @@
   display: flex;
   overflow: hidden;
   width: 400px;
+  margin-left: 4px;
 }
 .text__item{
   min-width: 400px;
-  transition: 0.5s all;
+  opacity: 0;
 }
 
 #slide_1:checked~.slider>.slide_1{
   transform: translateX(0);
+  transition: opacity 1.5s;
+  opacity: 1;
 }
 #slide_1:checked~.controls>.text>.text__item_1{
   transform: translateX(0px);
+  transition: opacity 1.5s;
+  opacity: 1;
 }
 #slide_1:checked~.controls>.switcher>.switcher_1{
   background-color: rgb(162, 247, 228);
@@ -111,9 +116,13 @@
 
 #slide_2:checked~.slider>.slide_2{
   transform: translateX(-600px);
+  transition: opacity 1.5s;
+  opacity: 1;
 }
 #slide_2:checked~.controls>.text>.text__item_2{
   transform: translateX(-400px);
+  transition: opacity 1.5s;
+  opacity: 1;
 }
 #slide_2:checked~.controls>.switcher>.switcher_2{
   background-color: rgb(162, 247, 228);
@@ -121,18 +130,26 @@
 
 #slide_3:checked~.slider>.slide_3{
   transform: translateX(-1200px);
+  transition: opacity 1.5s;
+  opacity: 1;
 }
 #slide_3:checked~.controls>.text>.text__item_3{
   transform: translateX(-800px);
+  transition: opacity 1.5s;
+  opacity: 1;
 }#slide_3:checked~.controls>.switcher>.switcher_3{
   background-color: rgb(162, 247, 228);
 }
 
 #slide_4:checked~.slider>.slide_4{
   transform: translateX(-1800px);
+  transition: opacity 1.5s;
+  opacity: 1;
 }
 #slide_4:checked~.controls>.text>.text__item_4{
   transform: translateX(-1200px);
+  transition: opacity 1.5s;
+  opacity: 1;
 }#slide_4:checked~.controls>.switcher>.switcher_4{
   background-color: rgb(162, 247, 228);
 }
