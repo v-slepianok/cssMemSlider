@@ -3,7 +3,9 @@
   background-color: rgb(255, 213, 226);
   display: flex;
   justify-content: center;
-  min-width: 320px;
+  margin: 0;
+  padding: 0.7rem;
+  min-width: 30rem;
   overflow: hidden;
 
 }
@@ -54,7 +56,7 @@
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  margin: 1.2rem 2px;
+  margin: 1.2rem 0.1rem;
   border-radius: 50%;
   background-color: pink;
   border:  0.3rem solid rgb(80, 79, 79);
@@ -89,16 +91,16 @@
   background-color: #FFFFFF;
   justify-content: space-between;
   border:  0.3rem solid black;
-  border-top: 0px;
+  border-top: 0;
 }
 .text{
   display: flex;
   overflow: hidden;
   width: 70%;
-  margin-left: 2px;
 }
 .text__item{
   min-width: 25rem;
+  margin: 1.2rem 0 ; 
   opacity: 0;
 }
 
@@ -178,16 +180,20 @@
   }
   .text__item{
     margin-top: 0;
-    min-width: 23rem;
+    min-width: 22rem;
+    margin-left: 0.1rem;
   }
   .switcher{
     display: flex;
     justify-content: center;
   }
 }
+@media(max-width: 28.75rem){
+
+}
 @media(max-width: 24.9rem){
   .text__item{
     min-width: 17rem;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
