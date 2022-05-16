@@ -158,19 +158,23 @@
 @media(max-width: 39.75rem){
   .slider{
     width: 95%;
+    height: 40%;
   }
 
   .controls{
     width: 95%;
     flex-direction: column;
   }
-
+  .slider__item img{
+    height: 20rem;
+  }
   .text{
     order: 1;
     width: 99%;
   }
   .text__item{
     margin-top: 0;
+    min-width: 23rem;
   }
   .switcher{
     display: flex;
