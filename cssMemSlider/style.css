@@ -5,6 +5,7 @@
   justify-content: center;
   min-width: 320px;
   overflow: hidden;
+
 }
 .container{
   display: flex;
@@ -156,7 +157,10 @@
 }
 
 @media(max-width: 39.75rem){
-  .slider{
+  .title{
+    font-size: 2rem;
+  } 
+ .slider{
     width: 95%;
     height: 40%;
   }
